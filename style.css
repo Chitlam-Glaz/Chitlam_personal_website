@@ -1,0 +1,13 @@
+*{
+    color:blue; /*a comment*/
+    margin:10px;
+    font:14px Tahoma
+}
+
+button.subpage {
+    color: black;
+}
+
+p.special{
+    color: red;
+}
