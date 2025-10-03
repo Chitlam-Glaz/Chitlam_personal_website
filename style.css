@@ -8,6 +8,9 @@ button.subpage {
     color: black;
 }
 
+body{
+    background-color: beige;
+}
 p.special{
     color: red;
 }
