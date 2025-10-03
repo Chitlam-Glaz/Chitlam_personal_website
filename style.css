@@ -11,3 +11,7 @@ button.subpage {
 p.special{
     color: red;
 }
+
+.box{
+    display: flex;
+}
