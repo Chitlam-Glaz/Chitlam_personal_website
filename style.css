@@ -1,11 +1,15 @@
 *{
-    color:blue; /*a comment*/
+    color:black; /*a comment*/
     margin:10px;
     font:14px Tahoma
 }
 
+title{
+    color: blue;
+    font: 30px Tahoma;
+}
 button.subpage {
-    color: black;
+    color: white;
 }
 
 body{
@@ -31,8 +35,8 @@ p.special{
 }
 
 .grid-item1{
-    background: lightgray;
-    border: black 1px solid;
+    background: lightcoral;
+    border: red 1px solid;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -40,8 +44,8 @@ p.special{
 }
 
 .grid-item2{
-    background: lightgray;
-    border: black 1px solid;
+    background: lightblue;
+    border: blue 1px solid;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -49,8 +53,8 @@ p.special{
 }
 
 .grid-item3{
-    background: lightgray;
-    border: black 1px solid;
+    background: lightgreen;
+    border: green 1px solid;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -64,4 +68,8 @@ h1{
 button{
     border: 2px solid #aaa;
     background-color: #555;
+}
+
+#cv{
+    color: white;
 }
