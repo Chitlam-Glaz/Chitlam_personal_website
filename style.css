@@ -70,7 +70,7 @@ h1{
 
 header, section{
     margin: 2em auto;
-    width: min(75em, 100%);
+    width: min(100em, 100%);
     background-color: antiquewhite;
     padding:min(2em, 15%);
     border-radius: 1em;
@@ -111,16 +111,17 @@ button.subpage {
     color: black;
 }
 
+
 .flex-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 2em;
 }
 
 header img{
-    max-width: 300px;
+    max-width: 500px;
     border-radius: 1em;
     object-fit: cover;
     object-position: bottom;
@@ -128,6 +129,7 @@ header img{
 
 .text-container{
     flex:0 1 40em;
+    align-items: center;
 }
 
 h1{
@@ -138,3 +140,39 @@ h1{
 h1.welcomesen{
     color: blue;
 }
+
+
+h2{
+    font-size: 3em;
+    color: blue;
+}
+
+vis-scatterplot {
+            font-family: Arial, sans-serif;
+        }
+        .dot {
+            fill: steelblue;
+            opacity: 0.7;
+        }
+        .axis path, .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+        .axis text {
+            font-size: 18px; /* Scaled from 12px by 1.5 */
+        }
+
+#vis-piechart {
+            display: flex;
+            justify-content: center;
+        }
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+        }
