@@ -77,7 +77,7 @@ header, section{
 }
 
 nav{
-    margin: 1em auto 1 1em auto;
+    margin: 1em auto 1em auto;
     width: min(1000px, 100%);
     font-size: 1.5em;
 }
