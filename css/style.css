@@ -163,6 +163,10 @@ h2{
     color: blue;
 }
 
+.video{
+    align-self: center;
+}
+
 vis-scatterplot {
             font-family: Arial, sans-serif;
         }
