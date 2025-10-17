@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <title>Chen Chit Lam</Title>
@@ -12,9 +12,10 @@
             <nav>
                 <ul>
                     <p>Chen Chit Lam</p>
-                    <button class="subpage">Press me</button>
-                    <button class="subpage">About me</button>
-                    <button id="cv">CV</button>
+                    <a class="subpage" href="#vis-piechart">Pie chart</a>
+                    <a class="subpage" href="subpage/my_work.html">About me</a>
+                    <a class="subpage" href="Julian_CV.pdf">CV</a>
+                    <button id="cv">Click me</button>
                 </ul>
             </nav>
 
@@ -29,7 +30,7 @@
                         Skilled in creating engaging content, looking to become a video producer who simplifies knowledge for audiences to enjoy and understand. 
                         Continuously enhance multimedia skills, and actively pursue studies in diverse subjects to enhance my skills and creativity. </p>
                     <p class="special">And this is my favorite character!</p>
-                    <a class="intro_button" href=""> Follow me on Instagram </a>
+                    <a class="intro_button" href="https://chitlchen2-c.wixsite.com/my-site-3"> Find me in Website </a>
 
                 </div>
             </div> 
@@ -58,15 +59,20 @@
             <h2>This is my pie chart section</h2>
         </section>
 
+        <section id="vis-treedata">
+            <h2>This is my tree data section</h2>
+        </section>
+
         </section>
         <link>
         <h1>Welcome</h1>
         <p>
             <button id="welcome">Click me</button>
         </p>
-        <script src="code.js"></script>
-        <script src="scatterplot.js"></script>
-        <script src="piechart.js"></script>
+        <script src="javascript/code.js"></script>
+        <script src="javascript/scatterplot.js"></script>
+        <script src="javascript/piechart.js"></script>
+        <script src="javascript/treedata.js"></script>
     </body>
 </html>
 

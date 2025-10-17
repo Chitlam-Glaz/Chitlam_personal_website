@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     color:black; /*a comment*/
     margin:10px;
@@ -62,7 +65,7 @@ h1{
     color: #333;
 }
 
-#cv{
+#click{
     color: black;
     border-radius: .3em;
     font-size: 1.2em;
@@ -105,11 +108,24 @@ nav p:first-child{
     font-weight: 600;
 }
 
+a[href="#vis-piechart"] {
+    border-radius: .3em;
+    font-size: 1.2em;
+    color: black;
+}
+
+a[href="my_work.html"] {
+    border-radius: .3em;
+    font-size: 1.2em;
+    color: black;
+}
+
 button.subpage {
     border-radius: .3em;
     font-size: 1.2em;
     color: black;
 }
+
 
 
 .flex-container{
@@ -176,3 +192,114 @@ vis-scatterplot {
             font-size: 12px;
             pointer-events: none;
         }
+
+css/* treedata.css */
+
+/* Section styling */
+#vis-treedata {
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Increased max-width */
+    margin: 20px auto;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+/* Heading styling */
+#vis-treedata h2 {
+    font-family: 'Arial', sans-serif;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* SVG container */
+#vis-treedata svg {
+    display: block;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Links (branches) */
+.link {
+    stroke: #6b7280;
+    stroke-width: 2.5px;
+    stroke-opacity: 0.7;
+    transition: stroke-opacity 0.3s ease;
+}
+
+/* Hover effect for links */
+.link:hover {
+    stroke-opacity: 1;
+    stroke: #3b82f6;
+}
+
+/* Nodes (circles) */
+.node circle {
+    fill: #3b82f6;
+    stroke: #1f2937;
+    stroke-width: 1.5px;
+    transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+/* Hover effect for nodes */
+.node circle:hover {
+    fill: #2563eb;
+    transform: scale(1.3);
+}
+
+/* Node text */
+.node text {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px; /* Reduced font size */
+    fill: #1f2937;
+    font-weight: 500;
+}
+
+/* Differentiate parent nodes (categories) */
+.node:not(.leaf) text {
+    font-weight: 700;
+    font-size: 14px; /* Slightly smaller */
+    fill: #111827;
+}
+
+/* Leaf nodes (frequency, favorites, etc.) */
+.node.leaf text {
+    font-size: 11px; /* Smaller for leaf nodes */
+    fill: #4b5563;
+}
+
+/* Animation for nodes on load */
+.node {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #vis-treedata {
+        padding: 10px;
+    }
+    #vis-treedata svg {
+        width: 100%;
+        height: auto;
+    }
+    .node text {
+        font-size: 10px;
+    }
+    .node:not(.leaf) text {
+        font-size: 12px;
+    }
+}
