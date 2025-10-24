@@ -307,3 +307,45 @@ css/* treedata.css */
         font-size: 12px;
     }
 }
+
+/* matrix.css */
+.adjacency-matrix {
+    border-collapse: collapse;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.adjacency-matrix th, .adjacency-matrix td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.row-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+}
+
+.connected {
+    background-color: #69b3a2; /* Teal for connections, matching hobby node color */
+    color: #fff;
+    font-weight: bold;
+}
+
+.empty {
+    background-color: #fff; /* White for no connections */
+}
+
+.adjacency-matrix th:empty {
+    background-color: transparent;
+    border: none;
+}
