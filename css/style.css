@@ -371,3 +371,7 @@ css/* treedata.css */
 #map { height: 500px; width: 100%; }
 
 #vis-dotdensitymap h2 { text-align: center; margin-bottom: 10px; }
+
+
+.map-container { height:700px; width:100%; border-radius:10px;border:3px solid #ddd; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+@media (max-width:768px){ .map-container{height:500px;} }
